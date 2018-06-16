@@ -1,0 +1,39 @@
+@import 'base.scss';
+
+.InputText {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .minimap {
+    background-color: rgba(0, 0, 0, 0.089);
+    border: none;
+
+    .minimap-viewport {
+      background-color: rgba(0, 0, 0, 0.144);
+    }
+  }
+
+  .text {
+    cursor: default;    
+    padding: 8px 128px 8px 8px;  // space for minimap
+    overflow: auto;
+    line-height: 1.5;
+
+    .token {
+      opacity: 1;
+      margin: 4px 0 4px 0;
+      border-bottom: 2px solid transparent;
+
+      &::selection {
+        background: transparent;
+      }
+
+      &.selected {
+        border-bottom: 2px solid #000;
+      }
+    }
+  }
+}

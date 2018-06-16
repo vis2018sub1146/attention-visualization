@@ -1,0 +1,98 @@
+@import 'base.scss';
+
+.ControlPanel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: $medium-grey;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  user-select: auto;
+
+  .guide {
+    height: 100%;
+    width: calc(100% - 64px);
+    padding: 0 32px 0 32px;
+    user-select: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .slider {
+      width: 200px;
+
+      .rangeslider-horizontal {
+        height: 4px;
+        box-shadow: none;
+      }
+      .rangeslider__fill {
+        background-color: $medium-blue;
+        box-shadow: none;
+      }
+
+      .rangeslider__handle {
+        width: 12px;
+        height: 12px;
+        left: -13px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: none;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    .locks {
+      opacity: 0.5;
+      margin-bottom: 16px;
+      cursor: pointer;
+    }
+
+    .instructions {
+      text-align: start;
+      padding: 0;
+      max-width: 400px;
+
+      .instruction {
+        margin: 4px 0 4px 0;
+
+        .bold {
+          font-weight: 700;
+          color: $medium-grey;
+
+        }
+        
+        .underline {
+          border-bottom: 1px solid $medium-grey;
+        }
+      }
+    }
+
+    .legend-clickable {
+      margin: 4px 0 0 0;
+      padding: 4px 0 4px 0;
+      width: 300px;
+      cursor: pointer;
+      border: 1px solid $light-grey;
+      border-radius: 4px;
+
+      &:hover {
+        border: 1px solid $medium-grey;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.Flowmap {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+  .Flowmap .event-panel {
+    fill: transparent; }
+  .Flowmap .edge {
+    fill: none;
+    opacity: 0.5;
+    pointer-events: none; }
+    .Flowmap .edge.faded {
+      opacity: 0.02; }
+  .Flowmap .node.output {
+    stroke-width: 1px;
+    stroke: #e9e9e9; }
+    .Flowmap .node.output.selected {
+      stroke: transparent; }
+  .Flowmap .node.input {
+    cursor: default; }
+  .Flowmap .text {
+    font-size: 10px;
+    font-weight: 400;
+    user-select: none;
+    pointer-events: none; }
+    .Flowmap .text.novel {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      fill: #000;
+      font-weight: 400; }
+    .Flowmap .text.output-copy {
+      fill: #797979; }
+    .Flowmap .text.input-copy {
+      fill: #9b9b9b; }
+    .Flowmap .text .pos {
+      font-weight: 300;
+      font-family: 'Roboto', serif;
+      font-style: italic;
+      fill: #9b9b9b; }
+      .Flowmap .text .pos.copy {
+        fill: #e9e9e9; }
+  .Flowmap .grabbable {
+    cursor: grab;
+    cursor: -webkit-grab; }
+  .Flowmap .grabbed {
+    cursor: grabbing;
+    cursor: -webkit-grabbing; }
+  .Flowmap .clickable {
+    cursor: pointer; }
+  .Flowmap .cancel {
+    cursor: no-drop; }
+  .Flowmap .extendable {
+    cursor: ns-resize !important; }

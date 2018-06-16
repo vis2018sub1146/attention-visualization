@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:700i');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400i');
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline:0;
+}
